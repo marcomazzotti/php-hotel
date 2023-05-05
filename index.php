@@ -65,12 +65,7 @@
           <tr>
             <td><?php echo $hotel['name']; ?></td>
             <td><?php echo $hotel['description']; ?></td>
-            <td><?php if ($hotel['parking'] === true) {
-              echo 'si';
-            } else {
-              echo 'no';
-            } ?>
-            </td>
+            <td><?php echo $hotel['parking'] ? "Si" : "No"; ?></td>
             <td><?php echo $hotel['vote']; ?></td>
             <td><?php echo $hotel['distance_to_center']; ?> km</td>
           </tr>
